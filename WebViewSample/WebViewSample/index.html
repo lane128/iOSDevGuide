@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="DClock.js"></script>
+		<title>DClock</title>
+	</head>
+
+	<body>
+		<canvas id="clock" width="700px" height="200px">
+			您的浏览器太古董了，升级吧！
+		</canvas>
+		<script type="text/javascript">
+			 //	var opt={
+			 //		marginX:number,
+			 //		marginY:number,
+			 //		lineLength:number,
+			 //		lineBorder:Number,
+			 //		strokeStyle: String     ("#000",red)
+			 //	}
+			DClock.InitWithCanvas(document.getElementById("clock"), {
+				"marginX": 10,
+				"marginY": 10,
+				"lineLength": 50,
+				"lineBorder": 8,
+				"strokeStyle": "black"
+			});
+			console.log(DClock);
+			setInterval("DClock.Initclock();", 1000);
+		</script>
+	</body>
+
+</html>
