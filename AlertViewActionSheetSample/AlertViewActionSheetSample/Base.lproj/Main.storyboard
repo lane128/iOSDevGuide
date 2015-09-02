@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX3-aJ-Lbi">
+                                <rect key="frame" x="240" y="76" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lsx-D8-odI"/>
+                                    <constraint firstAttribute="width" constant="120" id="ngy-pL-oW7"/>
+                                </constraints>
+                                <state key="normal" title="AlertButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertButtonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M3d-Xm-sHG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5d-mi-vCP">
+                                <rect key="frame" x="240" y="138" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7G5-In-r3g"/>
+                                    <constraint firstAttribute="height" constant="30" id="lEI-KB-731"/>
+                                </constraints>
+                                <state key="normal" title="ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSheetTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A6y-5e-vo5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XX3-aJ-Lbi" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6Sc-sb-t7h"/>
+                            <constraint firstItem="XX3-aJ-Lbi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="56" id="SEU-PE-DtM"/>
+                            <constraint firstItem="XX3-aJ-Lbi" firstAttribute="trailing" secondItem="I5d-mi-vCP" secondAttribute="trailing" id="aap-yR-nxh"/>
+                            <constraint firstItem="I5d-mi-vCP" firstAttribute="top" secondItem="XX3-aJ-Lbi" secondAttribute="bottom" constant="32" id="fra-ao-xmc"/>
+                            <constraint firstItem="XX3-aJ-Lbi" firstAttribute="leading" secondItem="I5d-mi-vCP" secondAttribute="leading" id="iz9-ii-G8Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="428"/>
+        </scene>
+    </scenes>
+</document>

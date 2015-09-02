@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cHY-Pa-2Qr">
+                                <rect key="frame" x="282" y="75" width="37" height="37"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S90-bs-Xr3">
+                                <rect key="frame" x="259" y="138" width="82" height="38"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="CNE-WF-JFb"/>
+                                    <constraint firstAttribute="height" constant="38" id="ecz-Zd-XPd"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upLoadTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="asd-4l-mQF"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gO5-Bh-rkm">
+                                <rect key="frame" x="199" y="275" width="203" height="2"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="UNU-4E-Ek1"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgO-WF-Hjh">
+                                <rect key="frame" x="259" y="315" width="82" height="38"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downLoarTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pKA-zg-Gsn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QgO-WF-Hjh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0rh-4j-J7Q"/>
+                            <constraint firstItem="S90-bs-Xr3" firstAttribute="top" secondItem="cHY-Pa-2Qr" secondAttribute="bottom" constant="26" id="1pP-Hw-kwZ"/>
+                            <constraint firstItem="cHY-Pa-2Qr" firstAttribute="centerX" secondItem="S90-bs-Xr3" secondAttribute="centerX" id="4Fo-0f-zde"/>
+                            <constraint firstItem="QgO-WF-Hjh" firstAttribute="centerX" secondItem="gO5-Bh-rkm" secondAttribute="centerX" id="UkS-6m-g06"/>
+                            <constraint firstItem="cHY-Pa-2Qr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="cQN-gj-6t3"/>
+                            <constraint firstItem="S90-bs-Xr3" firstAttribute="leading" secondItem="QgO-WF-Hjh" secondAttribute="leading" id="kIG-i8-gLA"/>
+                            <constraint firstItem="QgO-WF-Hjh" firstAttribute="trailing" secondItem="S90-bs-Xr3" secondAttribute="trailing" id="pAj-wT-qf3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadButton" destination="QgO-WF-Hjh" id="M0k-0d-ogk"/>
+                        <outlet property="myActivityIndicator" destination="cHY-Pa-2Qr" id="mgm-IZ-cjV"/>
+                        <outlet property="myProgress" destination="gO5-Bh-rkm" id="cuZ-XH-iaw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
